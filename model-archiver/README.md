@@ -138,11 +138,13 @@ A serialized file (.pt or .pth) should be a checkpoint in case of torchscript an
 
 ### Handler
 
-Handler can be TorchServe's inbuilt handler name or path to a py file to handle custom TorchServe inference logic. TorchServe supports following handlers out or box:
+Handler can be TorchServe's inbuilt handler name or path to a py file to handle custom TorchServe inference logic. Some examples of provided handlers are
 1. `image_classifier`
 2. `object_detector`
 3. `text_classifier`
 4. `image_segmenter`
+
+For a comprehensive list of handlers, check out [examples](../examples/README.md)
 
 In case of custom handler, if you plan to provide just `module_name` or `module_name:entry_point_function_name` then make sure that it is prefixed with absolute or relative path of python file.
 e.g. if your custom handler custom_image_classifier.py is in /home/serve/examples then
