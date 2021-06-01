@@ -184,7 +184,7 @@ Supply a [python requirements](https://pip.pypa.io/en/stable/user_guide/#require
 
 Example:
 ```bash
-torch-model-archiver --model-name densenet_161 --version 1.0 --model-file model.py --serialized-file model.pt --handler image_classifier --requirements-file <path_to_custom_requiremnets_file>
+torch-model-archiver --model-name densenet_161 --version 1.0 --model-file model.py --serialized-file model.pt --handler image_classifier --requirements-file <path_to_custom_requirements_file>
 ```
 
 **Note**: This feature is by-default disabled in TorchServe and needs to be enabled through configuration. For more details refer [TorchServe's configuration documentation](../docs/configuration.md#allow-model-specific-custom-python-packages)

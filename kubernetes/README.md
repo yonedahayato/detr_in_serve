@@ -25,7 +25,7 @@ The following table describes all the parameters for the Helm Chart.
 | `image`            | Torchserve Serving image | `pytorch/torchserve:latest-gpu` |
 | `inference_port`   | TS Inference port        | `8080`                          |
 | `management_port`  | TS Management port       | `8081`                          |
-| `metrics_port`     | TS Mertics port          | `8082`                          |
+| `metrics_port`     | TS Metrics port          | `8082`                          |
 | `replicas`         | K8S deployment replicas  | `1`                             |
 | `model-store`      | EFS mountpath            | `/home/model-server/shared/`    |
 | `persistence.size` | Storage size to request  | `1Gi`                           |
