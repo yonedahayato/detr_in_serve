@@ -231,5 +231,7 @@ class DETRDetectionHandler(BaseHandler, ABC):
         attention_output.seek(0)
         attention_output = base64.b64encode(attention_output.read())
 
+        output = output.decode()
+        attention_output = attention_output.decode()
 
         return [{"detected": output, "attention": attention_output}]
