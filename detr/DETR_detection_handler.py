@@ -218,7 +218,7 @@ class DETRDetectionHandler(BaseHandler, ABC):
             ax.set_title(f'query id: {idx.item()}')
 
             ax = ax_i[1]
-            ax.imshow(image)
+            ax.imshow(input_image)
 
             ax.add_patch(plt.Rectangle((xmin, ymin), xmax - xmin, ymax - ymin,
                                     fill=False, color='blue', linewidth=3))
